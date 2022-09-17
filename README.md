@@ -1,7 +1,9 @@
 # League of Legends Win Analysis
 What does it take for a team to win in a game of League of Legends? In a game of League of Legends, games usually last 40 minutes and there are 2 teams, blue and red. The objective is to destroy enemy towers and go deep into the enemy base to destroy their Nexus.
 
-In this repo, I look at data from the first 10 minutes of 10k high ranked league games and determine what game objectives players on blue team should focus on to improve their chances of winning.
+In this repo, I look at data from the first 10 minutes of 10k high ranked league games and determine what game objectives players on blue team should focus on to improve their chances of winning. In order to do so, I created a logistic regression and XGBoost model to visualize what features the models found important enough to use for predicting blue team win. Besides those two models, I also built a neural network to try and predict the game winner based off of data from the first 10 minutes of a game.
+
+For a more in-depth look at the variables and models, please refer to the notebook [here](/league.ipynb)
 
 # Dataset
 The data was taken from Kaggle and can be found [here](https://www.kaggle.com/datasets/bobbyscience/league-of-legends-diamond-ranked-games-10-min). It contains data from the first 10 minutes of 9879 high ranked League games (Diamond 1 to Master)
@@ -61,5 +63,9 @@ We don't see much of a difference in average CS per minute for a win vs loss whi
 #### Winrate Per Dragon Kill
 If blue team manages to kill 1 dragon, then there is a 64% chance of winning 
 ![dragon_winrate](/images/winrate_dragon.png)
+
+## Model Results
+The logistic regression model was the baseline and had an accuracy of 72%. XGBoost and the neural network could not improve the accuracy and they both also had 72% accuracy.
+
 # Conclusion
 Based on the feature importances, the important game objectives that players on blue team should focus on should be enemy kills, elite monsters (dragon over herald), gaining gold lead, and gaining experience lead.
