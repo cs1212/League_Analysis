@@ -3,7 +3,7 @@ What does it take for a team to win in a game of League of Legends? In a game of
 
 In this repo, I look at data from the first 10 minutes of 10k high ranked league games and determine what game objectives players on blue team should focus on to improve their chances of winning. In order to do so, I created a logistic regression and XGBoost model to visualize what features the models found important enough to use for predicting blue team win. Besides those two models, I also built a neural network to try and predict the game winner based off of data from the first 10 minutes of a game.
 
-For a more in-depth look at the variables and models, please refer to the notebook [here](/league.ipynb)
+For a more in-depth look at the variables and models, please refer to the notebook [here](/league.ipynb). Analysis was done in google colab and exported to .ipynb.
 
 # Dataset
 The data was taken from Kaggle and can be found [here](https://www.kaggle.com/datasets/bobbyscience/league-of-legends-diamond-ranked-games-10-min). It contains data from the first 10 minutes of 9879 high ranked League games (Diamond 1 to Master)
