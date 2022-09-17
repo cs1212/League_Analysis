@@ -36,10 +36,12 @@ Besides the histogram, we can also look at the correlations and get rid of corre
 # Results
 ## Logistic Regression Feature Importances
 After training the logistic regression model on the dataset, we can look at the coefficients and determine how 1 unit change affects the odds of winning. From the plot below, we can see that big factors of winning include killing elite monsters, killing the enemy team, and destroying enemy towers. Factors for losing are reversed. Blue team wants to prevent red team from killing elite monsters, killing blue team members, and destroying blue towers.
+
 ![logreg_importance](/images/logistic_importance.png)
 
 ## XGBoost Feature Importances
 After training the XGBoost model, we can plot the importance of each feature that was used in the model. At first glance, there are some differences in the features selected from XGBoost compared to logistic regression. For example, XGBoost placed more importance on gold and experience difference between the two teams while logistic did not. Besides that, they share some similarities such as the importance of killing elite monsters and the enemy team and the unimportance of CSPerMin.
+
 ![xgboost_importance](/images/xgboost_importance.png)
 
 ## Feature Plots
@@ -54,7 +56,7 @@ At the 10 minute mark, blue team should aim for a 900 experience lead for a high
 Given that the only elite monsters to spawn in the first 10 minutes would be 1 dragon and 1 herald, it appears that most games have 0 elite monsters killed in the first 10 minutes but if blue team manages to more elite monsters, then their chances of winning increases.
 ![blueelite](/images/blue_elitemonsters.png)
 #### Blue CSPerMin
-We don't see much of a difference in average CS per minute for a win vs loss.
+We don't see much of a difference in average CS per minute for a win vs loss which explains why our models didn't find this feature important.
 ![blueCS](/images/blue_cspermin.png)
 #### Winrate Per Dragon Kill
 If blue team manages to kill 1 dragon, then there is a 64% chance of winning 
