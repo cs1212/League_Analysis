@@ -56,9 +56,11 @@ At the 10 minute mark, blue team should aim for a 900 experience lead for a high
 ![blueexp_diff](/images/blue_expdiff.png)
 #### Blue Elite Monsters
 Given that the only elite monsters to spawn in the first 10 minutes would be 1 dragon and 1 herald, it appears that most games have 0 elite monsters killed in the first 10 minutes but if blue team manages to more elite monsters, then their chances of winning increases.
+
 ![blueelite](/images/blue_elitemonsters.png)
 #### Blue CSPerMin
 We don't see much of a difference in average CS per minute for a win vs loss which explains why our models didn't find this feature important.
+
 ![blueCS](/images/blue_cspermin.png)
 #### Winrate Per Dragon Kill
 If blue team manages to kill 1 dragon, then there is a 64% chance of winning 
