@@ -71,3 +71,7 @@ The logistic regression model was the baseline and had an accuracy of 72%. XGBoo
 
 # Conclusion
 Based on the feature importances, the important game objectives that players on blue team should focus on should be enemy kills, elite monsters (dragon over herald), gaining gold lead, and gaining experience lead.
+* Enemy Kills
+  * On average, Blue team wins by getting at least 7 kills in 10 minutes.
+* Elite Monsters
+  * Blue team wins focused more on dragons over heralds. 67% of elite monsters killed when blue wins were dragons so the team should prioritize killing dragon over herald.
