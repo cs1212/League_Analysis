@@ -72,6 +72,10 @@ The logistic regression model was the baseline and had an accuracy of 72%. XGBoo
 # Conclusion
 Based on the feature importances, the important game objectives that players on blue team should focus on should be enemy kills, elite monsters (dragon over herald), gaining gold lead, and gaining experience lead.
 * Enemy Kills
-  * On average, Blue team wins by getting at least 7 kills in 10 minutes.
+  * On average, blue team wins by getting at least 7 kills in 10 minutes.
 * Elite Monsters
   * Blue team wins focused more on dragons over heralds. 67% of elite monsters killed when blue wins were dragons so the team should prioritize killing dragon over herald.
+* Gold Difference
+  * On average, the winning team had a 1270 gold lead 10 minutes into the game. If we split this across all 5 team members, this is 254 extra gold per member which is roughly worth one small equipment. Players should aim for having bought 1 more equipment than the opposing team by 10 minutes to maximize their odds of winning.
+* Experience Difference
+  * Players should aim for a 900 experience difference from the enemy team. This can come from killing more minions/monsters or getting enemy kills. For example, this equates to killing 18 more minions than the enemy (3 waves).
